@@ -74,13 +74,6 @@ class build_model:
                 setattr(self, "target", np.matrix(new_target))
         else:
             raise TypeError("Feature and target only accepts Python List or NumPy Array!")
-            
-        """
-        new_target = []
-        for each in self.target:
-            new_target.append([each])
-        
-        setattr(self, "target", np.matrix(new_target))"""
     
     def fit_model(self):
         """Fit linear regression to the features"""
